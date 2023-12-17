@@ -325,12 +325,36 @@ div.gallery img {
   display: grid;
   align-items: center;
   justify-content: space-around;
-  margin: 25px;
   background-color: white;
-  padding: 30px;
   padding-top: 80px;
 }
 
+.flex .w-full .p1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px 0;
+}
+
+  
+.flex .btn {
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  font-family: poppins;
+  padding: 10px 25px;
+  border: none;
+  height: 80px;
+  width: 200px;
+}
+.flex .btn p{
+  color: #0C5268;
+  font-size: 1.2rem;
+  font-family: poppins;
+  font-weight: 600;
+}
 .fifthSection {
   margin: 60px;
 }
