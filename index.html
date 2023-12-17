@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSCom infotech</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  </link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet"
+    href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyQQ9BRaFvBEh5h9C2MIcH7jz9MqBKD5x" crossorigin="anonymous">
+  <!-- Bootstrap JS (Popper.js and jQuery are required for Bootstrap JS) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-dp02M2kKQgIeHOpfIMDw7D/uFuJQlr6aJoCmDA6OaHqjF2LxX8jU6moJp8U2I2U" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyQQ9BRaFvBEh5h9C2MIcH7jz9MqBKD5x" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+</head>
+
+
+<nav class=" bg-[#ffffff]  z-10">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <a class="navbar-brand" href="https://pixelnovo.in/" target="_self"><img class="logo" src="logo.png" alt="logo"></a>
+    <button data-collapse-toggle="mobile-menu" type="button"
+      class="md:hidden ml-3 mr-3 text-gray-400 hover:text-white-00 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+      aria-controls="mobile-menu-2" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+
+
+    </button>
+    <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+      <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+        <li>
+          <a href="#home"
+            class="bg-white-00 md:bg-transparent text-black block pl-3 pr-4 py-2 md:text-white-00 md:p-0 rounded focus:outline-none"
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#services"
+            class="bg-white-00 md:bg-transparent text-black block pl-3 pr-4 py-2 md:text-white-00 md:p-0 rounded focus:outline-none"
+            aria-current="page">
+            Services</a>
+        </li>
+        <li>
+          <a href="#hireus"
+            class="bg-white-00 md:bg-transparent text-black block pl-3 pr-4 py-2 md:text-white-00 md:p-0 rounded focus:outline-none"
+            aria-current="page">
+            Hire Us</a>
+        </li>
+        <li>
+          <a href="#blog"
+            class="bg-white-00 md:bg-transparent text-black block pl-3 pr-4 py-2 md:text-white-00 md:p-0 rounded focus:outline-none"
+            aria-current="page">
+            Blog</a>
+        </li>
+        <li>
+          <a href="#Contact"
+            class="bg-white-00 md:bg-transparent text-black block pl-3 pr-4 py-2 md:text-white-00 md:p-0 rounded focus:outline-none"
+            aria-current="page">
+            Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <section id="home" class="firstSection">
+    <div class=" text abt-bnner-txt uiland-bnner-txt ">
+      <h1>Best <span>Website Designing</span><br> Company in India</h1><br>
+      <div>
+        <p>Utilize our skilled website design services to revolutionize your digital products. We
+          produce aesthetically beautiful, incredibly useful, user-friendly, and conversion-optimized
+          designs.</p>
+      </div><br><br><br><br>
+      <button class="btn cont" data-toggle="modal" data-target="#Contact">
+        <a href="https://wa.link/rtaw12" target="_blank">Contact Us</a></button>
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <div class="abt-bnner-img">
+        <img src="Home.png" alt="">
+      </div>
+    </div>
+  </section>
+  <div id="services" style="background-color: #f5f7fa;">
+    <div class="container mx-auto text-center"><br><br>
+      <div class="about-ui-ux">
+        <h2 class="text-2xl md:text-3xl  font-bold text-center mb-6 " style="color: #3f4040;">Our <span
+            class="theme_color" style="color: #0C5268;">Services</span></h2>
+        <p class="para1">We utilize state-of-the-art design tools and processes to ensure that your products are
+          accessible user-friendly, and responsive on a range of devices. Our UI/UX design services go beyond simple
+          aesthetics, we put an emphasis on creating a seamless, intuitive user exprience that boosts engagement and
+          encourages conversions.Additionally, we make sure that our designs follows best practices and corespond with
+          the
+          largest design trends so that your items stand out in the marketplace.</p>
+      </div>
+
+      <div class="container__box ">
+        <div class="box flex items-center justify-center flex-col">
+          <img class="img1" src="11.png" alt="">
+          <h3>UI/UX Designing</h3>
+          <p>We are passionate about creating exceptional user experiences that resonate with your audience
+            and elevate your digital presence. Our UI/UX design services are tailored to meet the unique
+            needs of your business, ensuring that every interaction with your product or website is a
+            memorable one.</p>
+        </div>
+
+
+        <div class="box flex items-center justify-center flex-col">
+          <img class="img1" src="12.png" alt="">
+          <h3>Web Development</h3>
+          <p>Unlock the full potential of your online presence with cutting-edge web development services. We
+            are dedicated to crafting websites and web applications that not only captivate your audience
+            but also deliver exceptional functionality and performance.</p><br>
+
+        </div>
+        <div class="box flex items-center justify-center flex-col">
+          <img class="img1" src="13.png" alt="">
+          <h3>Logo/Graphics</h3>
+          <p>We understand the power of visual communication. Our graphic design services are dedicated to
+            helping businesses and organizations convey their messages, captivate audiences, and leave a
+            lasting impression through stunning and effective visuals.</p><br>
+        </div>
+        <div class="box flex items-center justify-center flex-col">
+          <img class="img1" src="14.png" alt="">
+          <h3>SEO</h3>
+          <p>We specialize in delivering top-notch SEO services that elevate your website's ranking, drive
+            organic traffic, and boost your online presence. With our proven strategies, we help businesses
+            like yours reach the top of search engine results and stay there.</p><br><br>
+        </div>
+      </div>
+    </div><br><br>
+  </div>
+  </div>
+  <br><br>
+
+  <div class="container2 mx-auto lg:p-8 md:p-8 ">
+    <h2 class="text-2xl md:text-3xl  font-bold text-center mb-6 " style="color: #3f4040;">Why <span class="theme_color"
+        style="color: #0C5268;">Choose</span> Us?</h2><br><br><br>
+    <div class="row1 flex choose-us">
+      <!-- First Column -->
+      <div class="col1 w-1/2 my-auto  " style="padding-left: 23px;">
+        <!-- First Row -->
+        <div class="x1 flex mb-4 ">
+          <img src="1.png" class="y2 w-15 h-15 object-cover mr-4" style="width: 40px; height: 45px;" alt="Image 1">
+          <div style="margin: 2px; padding-left: 10px;">
+            <h3 class="font-bold" style="padding-top: 2px; font-family: poppins; font-size: 23px; ">Expertise and
+              Experience</h3>
+            <p style="font-family: poppins; font-size: 1rem; width: 450px;">Amazon Seller app allows you to manage your
+              Amazon.in business on the go with features such as creating listings, tracking sales, fulfilling orders,
+              responding to customers, and more—all from your mobile device.</p>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="x1 flex mb-4 ">
+          <img src="2.png" class="y2 w-15 h-15 object-cover mr-4" style="width: 40px; height: 40px;" alt="Image 2">
+          <div style="margin: 2px; padding-left: 10px;">
+            <h3 class="font-bold" style="padding-top: 2px; font-family: poppins; font-size: 23px;">Client-Centric
+              Approach</h3>
+            <p style="font-family: poppins; font-size: 1rem; width: 450px;">Amazon Seller app allows you to manage your
+              Amazon.in business on the go with features such as creating listings, tracking sales.</p>
+          </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="x1 flex mb-4 ">
+          <img src="3.png" class="y2 w-15 h-15 object-cover mr-4" style="width: 40px; height: 40px; " alt="Image 3">
+          <div style="margin: 2px;  padding-left: 10px;">
+            <h3 class="font-bold" style="padding-top: 2px; font-family: poppins; font-size: 23px;">Quality Assurance
+            </h3>
+            <p style="font-family: poppins; font-size: 1rem; width: 450px;">Amazon Seller app allows you to manage your
+              Amazon.in business on the go with features such as creating listings, tracking sales.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Column -->
+      <div class="y4 col2 w-1/2  lg:pl-20 md:pl-19  pt-9 ml-4  column-2-us" style="padding-top: 23px; width: 50%;">
+        <div class=" p-3 ">
+          <img src="https://th.bing.com/th/id/OIP.gva5Y2YfP2dBpO9g3QUuigHaE1?w=514&h=336&rs=1&pid=ImgDetMain"
+            class="x2 object-cover w-full top-1/2 transform -translate-x-1/2 ml-16 mt-4  "
+            style="padding-bottom: 50px; border-top-left-radius: 30px; border-bottom-right-radius: 80px;"
+            alt="Centered Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+
+  <!-- Portfolio Section Here.. -->
+
+
+  <br><br>
+
+  <section class="thirdSection" style="background-color: #f5f7fa;">
+    <div class="container mx-auto text-center" style="padding-bottom: 100px;">
+      <div class="about-ui-ux">
+        <h2 class="text-2xl md:text-3xl  font-bold text-center mb-6 " style="color: #3f4040;">Our <span
+            class="theme_color" style="color: #0C5268;">Key Clients</span></h2>
+        <p class="para1">As we help clients to achieve their business objectives from the very first day through
+          empowering their business website most convenient,
+          secure and productive way to reach the audience</p>
+      </div>
+      <div class="xyz">
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <img src="16.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="17.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="18.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="18.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="16.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="17.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="18.png" alt="Mountains">
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <img src="18.png" alt="Mountains">
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Why Hire Us Section. -->
+
+  <section id="hireus" class="fourthSection"><br><br><br>
+    <h2 class="text-3xl font-bold text-center mb-6 underline">Why Hire Us?</h2><br>
+    <div class="wrapper2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="box3 bg-white p-6 text-center">
+        <img class="img3 mx-auto" src="Hire-1.svg" alt="">
+        <br><br>
+        <h5 class="text-xl font-bold mt-2">Quality Service</h5>
+        <p class="twhite">Delivering Quality Services That Exceed Your Expectations.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="box3 bg-white  p-6 text-center">
+        <img class="img3 mx-auto" src="Hire-2.svg" alt="">
+        <br><br>
+        <h5 class="text-xl font-bold mt-2">Industry Experts</h5>
+        <p class="twhite">Unlocking the Power of IT Services with Our Industry Experts.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="box3 bg-white  p-6 text-center">
+        <img class="img3 mx-auto" src="Hire-3.svg" alt="">
+        <br><br>
+        <h5 class="text-xl font-bold mt-2">Cutting-Edge Technology</h5>
+        <p class="twhite">Highlight your proficiency in using the latest IT Services technologies and tools.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="box3 bg-white p-6 text-center">
+        <img class="img3 mx-auto" src="Hire-4.svg" alt="">
+        <br><br>
+        <h5 class="text-xl font-bold mt-2">On-Time Delivery</h5>
+        <p class="twhite">Your IT Solutions, Right When You Need Them.</p>
+      </div>
+  </section>
+  </div>
+
+
+
+
+  <!-- Blog Section  -->
+  <section class="fifthSection py-12 ">
+    <div class="HideBlog">
+      <div id="blog">
+      </div>
+      <h2 class=" head1 text-3xl font-bold text-center mb-6">Our <span class="theme_color"
+          style="color: #0C5268;">Blog</span></h2><br>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div class="col-sm-3 bg-white rounded-lg shadow p-6 transition duration-300 ease-in-out">
+          <img src="Blog-1.svg" class="b-img-1 mx-auto mb-4">
+          <p class="text-xl font-bold mb-2">Lorem, ipsum dolor.</p>
+          <p class="twhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veniam iste,
+            sapiente
+            facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+            atque asperiores porro reiciendis.</p><br><br>
+          <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+            <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-sm-3 bg-white rounded-lg shadow p-6 transition duration-300 ease-in-out">
+          <img src="Blog-2.svg" class="b-img-1 mx-auto mb-4">
+          <p class="text-xl font-bold mb-2">Lorem, ipsum dolor.</p>
+          <p class="twhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veniam iste,
+            sapiente
+            facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+            atque asperiores porro reiciendis.</p><br><br>
+          <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+            <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-sm-3 bg-white rounded-lg shadow p-6 transition duration-300 ease-in-out">
+          <img src="Blog-3.svg" class="b-img-1 mx-auto mb-4">
+          <p class="text-xl font-bold mb-2">Lorem, ipsum dolor.</p>
+          <p class="twhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veniam iste,
+            sapiente
+            facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+            atque asperiores porro reiciendis.</p><br><br>
+          <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+            <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-sm-3 bg-white rounded-lg shadow p-6 transition duration-300 ease-in-out">
+          <img src="Blog-1.svg" class="b-img-1 mx-auto mb-4">
+          <p class="text-xl font-bold mb-2">Lorem, ipsum dolor.</p>
+          <p class="twhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veniam iste,
+            sapiente
+            facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+            atque asperiores porro reiciendis.</p><br><br>
+          <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+            <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <!-- Blog Section With carousel Effect On Small Screen -->
+  <div class="min-h-screen bg-gray-100 p-3 relative carouselOFBlog overflow-hidden">
+    <h2 class="text-3xl font-bold text-center mb-6">Our <span class="theme_color"
+      style="color: #0C5268;">Blog</span></h2><br>
+    <div id="blog"></div>
+    <div class="w-96 mx-auto" style="scroll-snap-type: x mandatory;">
+      <!-- first -->
+      <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+        <!-- content #1 -->
+        <div
+          class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+          <img class="rounded-t-lg w-96 h-64" src="Blog-1.svg" alt="" />
+          <div class="py-4 px-8"><br>
+            <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">Blog One Heading.
+            </h1>
+            <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil, veniam iste,
+              sapiente
+              facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+              atque asperiores porro reiciendis.
+            </p>
+            <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+              <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+          </div>
+          <!-- controls -->
+          <div class="absolute top-1/2 left-9 w-80 flex justify-between z-20 my-auto">
+            <label for="carousel-4"
+              class="inline-block text-red-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+            <label for="carousel-2"
+              class="inline-block text-red-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- second -->
+      <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+        <!-- content #2 -->
+        <div
+          class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+          <img class="rounded-t-lg w-96 h-64" src="Blog-2.svg" alt="" />
+          <div class="py-4 px-8"><br>
+            <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+              Blog Two Heading.
+            </h1>
+            <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil, veniam iste,
+              sapiente
+              facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+              atque asperiores porro reiciendis.
+            </p>
+            <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+              <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+          </div>
+          <!-- controls -->
+          <div class="absolute top-1/2 left-9 w-80 flex justify-between z-20 my-auto">
+            <label for="carousel-1"
+              class="inline-block text-blue-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+            <label for="carousel-3"
+              class="inline-block text-blue-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- three -->
+      <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+        <!-- content #3 -->
+        <div
+          class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+          <img class="rounded-t-lg w-96 h-64" src="Blog-3.svg" alt="" />
+          <div class="py-4 px-8"><br>
+            <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+              Blog Three Heading.
+            </h1>
+            <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil, veniam iste,
+              sapiente
+              facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+              atque asperiores porro reiciendis.
+            </p>
+            <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+              <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+          </div>
+          <!-- controls -->
+          <div class="absolute top-1/2 left-9 w-80 flex justify-between z-20 my-auto">
+            <label for="carousel-2"
+              class="inline-block text-yellow-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+            <label for="carousel-4"
+              class="inline-block text-yellow-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- four -->
+      <div class="">
+        <input class="sr-only peer" type="radio" name="carousel" id="carousel-4" />
+        <!-- content #4 -->
+        <div
+          class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+          <img class="rounded-t-lg w-96 h-64" src="Blog-1.svg" alt="" />
+          <div class="py-4 px-8"><br>
+            <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+              Blog Four Heading.
+            </h1>
+            <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil, veniam iste,
+              sapiente
+              facilis saepe laudantium quae animi quo harum nisi ipsam debitis! Veritatis odio maiores tempore
+              atque asperiores porro reiciendis.
+            </p>
+            <button class="btn" data-toggle="modal" data-target="#Contact" style="color: #0C5268;">
+              <a href="https://wa.link/rtaw12" target="_blank">Read More...</a></button>
+          </div>
+          <!-- controls -->
+          <div class="absolute top-1/2 left-9 w-80 flex justify-between z-20 my-auto">
+            <label for="carousel-3"
+              class="inline-block text-blue-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+            <label for="carousel-1"
+              class="inline-block text-blue-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FAQ Section -->
+
+  <section class="sixthSection 2xl:max-w-full mx-auto px-4 md:px-8" id="faq">
+    <div class="container5">
+      <center>
+        <h2 class="text-3xl font-bold text-center mb-6  underline">Frequently Asked Questions</h2><br><br><br>
+      </center>
+      </h>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title">
+              <h3>Who is the best SEO
+                expert in Ghaziabad?</h3>
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Vipul Rajput is one of the most renowned SEO experts in Ghaziabad. He uses the best SEO practices to
+              rank the websites higher on SERP at an affordable cost. He has industry experience of 8 years. With
+              that, he knows what it takes to ensure your strong online presence to drive the most organic traffic to
+              your website.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+              <h3>Why should you choose me
+                as your SEO expert?</h3>
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>I don’t believe in the one-size-fits-all approach! I provide tailor-made SEO services to rank your
+              website at the top. Moreover, I help you develop an approach to getting organic leads. I ensure that
+              your website is just the way your potential customers want it to be so that they can put their trust in
+              you. </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">
+              <h3>What is the full form of
+                SEO?</h3>
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>SEO stands for search engine optimization. It is the practice of making a website rank higher on search
+              engines so that it can receive more traffic. The main aim of SEO is to rank your website on the first
+              page of Google for the search terms that mean the most to your target audience. </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">
+              <h3>How long does it take
+                for SEO to show results?</h3>
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>After the development of a website, Our SEO expert starts auditing your website and after analysis is
+              done in order to optimize the content of the website. Subsequently, the website is indexed by the
+              crawler. If the website is well-optimized and coupled with the right practices of on-page and off-page
+              SEO, you can see the result within a couple of weeks. </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">
+              <h3>Why is SEO vital to get
+                organic traffic?</h3>
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>SEO can make your website more visible to your potential audience by utilizing several techniques. It
+              can rank your website on the most searched keyword related to your industry. As a result, you get
+              organic traffic and more opportunities to convert leads into customers. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+
+  <!-- Contact us -->
+  <div id="Contact" class="container mx-auto p-8 ">
+    <center>
+      <h2 class="text-3xl font-bold text-center mb-6 underline">Contact Us</h2>
+    </center>
+  </div>
+  <section class="ContactSection w-full">
+    <div class=" leftSection1 ml-8">
+      <img class="img2" src="ContactUs.png" alt="">
+    </div>
+    <div class="rightSection1">
+      <div class="col-sm-12  md:w-1/2">
+        <div class="rightSection2 text-left ml-10">
+          <div class="row3 mb-8 text-center">
+            <span class="hello text-2xl">&#9993;</span>
+            <h3 class="text-xl font-bold">Email us On</h3>
+            <p class="text-md">contact.pixelnovo@gmail.com</p>
+          </div>
+          <div class="row4 text-center">
+            <div>
+              <span class="hello text-2xl">&#9742;</span>
+              <h3 class="text-xl font-bold">Call us on</h3>
+              <p class="text-md">+91 7827 2631 28</p>
+            </div>
+          </div>
+          <div class="row4 text-center mt-10">
+            <div>
+              <span class="hello text-2xl"><i class="fa fa-link" aria-hidden="true"></i></span>
+              <h3 class="text-xl font-bold">Follow us on</h3>
+              <div class="social-links ">
+                <a href="" target="_blank"><i class="fab fa-facebook-f p-1"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter p-1"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram p-1"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin-in p-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer Section -->
+
+<br><br><br>
+<footer class="relative bg-[#12123e] pt-8 pb-6 mx-auto">
+  <div class="container mx-auto px-4 ">
+    <div class="flex flex-wrap text-left lg:text-left row">
+      <div class="w-full lg:w-4/12 px-4">
+        <img src="logo1.png" alt="VSCom Infotech Logo" class="block  mb-4" style="width: 180px; height: auto;">
+        <p>
+          <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" style="padding-top: 12px;">
+            Empowering businesses with cutting-edge IT solutions and services. We specialize
+            in delivering tailored technology solutions to drive efficiency, innovation,
+            and growth. Let's transform your digital landscape together.
+          </a>
+        </p><br>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button
+            class=" text-white shadow-lg font-normal h-10 w-5 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            type="button">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button
+            class=" text-white shadow-lg font-normal h-10 w-5 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            type="button">
+            <i class="fab fa-telegram"></i>
+          </button>
+          <button
+            class=" text-white shadow-lg font-normal h-10 w-5 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            type="button">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button
+            class=" text-white shadow-lg font-normal h-10 w-5 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            type="button">
+            <i class="fab fa-linkedin"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/12 px-4"></div>
+      <div class="w-full lg:w-3/12 px-4">
+
+        <h4 class="text-3xl font-semibold text-white" style="font-size: 18px; padding-left: 30px; ">Navigations</h4><br>
+
+        <div class="flex flex-wrap">
+          <!-- Column 1 -->
+          <div class="nav-left w-full lg:w-3/12 md:w-6/12 sm:w-3/12">
+            <ul class="list-unstyled">
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#home">Home</a>
+              </li>
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                  href="#services">Services</a></li>
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#hireus">Hire
+                  Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="nav-right w-full lg:w-3/12 md:w-6/12 sm:w-3/12">
+            <ul class="list-unstyled">
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#Contact">Contact
+                  Us</a></li>
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#blog">Blog</a>
+              </li>
+              <li><a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#hireus">Hire
+                  Us</a></li>
+            </ul>
+          </div>
+        </div><br>
+      </div>
+
+      <div class="w-full lg:w-4/12 px-4">
+        <h4 class="text-3xl font-semibold text-white" style="font-size: 20px; padding-left: 100px; ">Location</h4>
+        <div class="mt-6 lg:mb-0 mb-6">
+
+          <button style="color: #ffffff;">
+            <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
+            HS-21 Commercial Market, Pratap Vihar Ghaziabad 201009 
+          </button><br>
+          <button style="color: #ffffff; padding-top: 23px;">
+            <i style=" color: white;" class="fa">&#9993</i>
+            dmtovipul@gmail.com
+          </button><br>
+          <button style="color: #ffffff; padding-top: 23px;">
+            <i style=" color: white;" class="fa">&#9742;</i> +91 8743879565
+           
+          </button><br>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-white font-semibold py-1">
+          Copyright © 2023 VSCom Infotech. All rights reserved.
+
+        </div>
+      </div>
+    </div>
+</footer>
+<div class="fixed-contact">
+  <a href="https://wa.me/918743879565" target="_blank">
+    <img src="whatsapp-transparent.png" alt="WhatsApp">
+  </a>
+</div>
+<!--Contact form
+ Fixed contact image 
+<div class="fixed-Contact" id="contactTrigger">
+  <img src="form-icon.png" alt="Contact">
+</div>
+
+
+
+<div class="contact-form-container items-center" id="contactForm">
+  <div class="container">
+    <div class="text-center">
+    <div class="close-btn" id="closeContactForm">
+      <img src="exit-icon.png" alt="Close Button">
+  </div>
+</div>
+  <hr class="mt-2"/>
+      <form class="mt-5">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="your name" required>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email"  placeholder="your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Phone Number:</label>
+            <input type="number" class="form-control" id="phone" name="phone"  placeholder="your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Company Name:</label>
+          <input type="text" class="form-control" id="companyname" name="companyname"  placeholder="your company name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Company Website:</label>
+        <input type="text" class="form-control" id="companwebsite" name="companywebsite"  placeholder="your comapany website url" required>
+    </div>
+
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter Your Query Here" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+  </div>
+</div>
+
+<div class="Fixed-Contact">
+  <a href="#home">
+      <img src="upper-arrow.png" alt="Upper Arrow">
+  </a>
+</div>
+-->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+</html>
