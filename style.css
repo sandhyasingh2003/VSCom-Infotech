@@ -650,7 +650,6 @@ div.gallery img {
 @media (max-width: 900px) {
   .f1  {
     text-align: center;
-    padding-right: 50px;
   }
   .b2 {
      display : none;
