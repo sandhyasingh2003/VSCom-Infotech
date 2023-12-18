@@ -647,8 +647,18 @@ div.gallery img {
   font-size: 1.1rem;
 }
 
-
-
+@media (max-width: 900px) {
+  .f1  {
+    text-align: center;
+    padding-right: 50px;
+  }
+  .f2 .b2 {
+     display : none;
+  }
+}
+.f2 .b2 {
+  display : unset;
+}
 
 /* Fixed Whatsapp */
 
