@@ -652,12 +652,9 @@ div.gallery img {
     text-align: center;
     padding-right: 50px;
   }
-  .f2 .b2 {
+  .b2 {
      display : none;
   }
-}
-.f2 .b2 {
-  display : unset;
 }
 
 /* Fixed Whatsapp */
