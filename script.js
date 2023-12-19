@@ -18,7 +18,7 @@ const items = document.querySelectorAll(".accordion1 button");
 function higher(params) {
   function toggleAccordion(){
   const itemToggle = this.getAttribute('aria-expanded');
-  for (i = 0; i < item.length; i++) {
+  for (i = 0; i < params.length; i++) {
     params[i].setAttribute('aria-expanded', 'false');
   }
   if (itemToggle == 'false') {
