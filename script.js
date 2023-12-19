@@ -13,18 +13,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-const items = document.querySelectorAll(".accordion button");
-function toggleAccordion() {
+const item = document.querySelectorAll(".accordion button");
+const items = document.querySelectorAll(".accordion1 button");
+function higher(params) {
+  function toggleAccordion(){
   const itemToggle = this.getAttribute('aria-expanded');
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
+  for (i = 0; i < item.length; i++) {
+    params[i].setAttribute('aria-expanded', 'false');
   }
   if (itemToggle == 'false') {
     this.setAttribute('aria-expanded', 'true');
   }
 }
-items.forEach(item => item.addEventListener('click', toggleAccordion));
+params.forEach(item => item.addEventListener('click', toggleAccordion));
+}
+higher(item);
+higher(items);
+
+
 /*
 
 const elH = document.querySelectorAll(".timeline li > div");
