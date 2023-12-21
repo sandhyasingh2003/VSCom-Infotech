@@ -227,7 +227,7 @@ text-align: left-align;
 padding: 0 5px;
 font-family: poppins;
 }
-@media (max-width: 930px) and (max-width: 1100px) {
+@media (max-width: 930px) and (max-width: 1200px) {
   .choose-us {
     display: flex;
     flex-flow: row wrap;
