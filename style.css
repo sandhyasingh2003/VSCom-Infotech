@@ -230,7 +230,7 @@ font-family: poppins;
 @media (max-width: 930px) and (max-width: 1200px) {
   .choose-us {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column ;
     justify-content: center;
   }
   .choose-us .col1{
