@@ -70,10 +70,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #0C5268;
+  color: #0c5268;
 }
-
-
 
 /* Home Page Css */
 .firstSection {
@@ -91,7 +89,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
   }
 
-  .abt-bnner-img>img {
+  .abt-bnner-img > img {
     width: 100% !important;
   }
 }
@@ -103,11 +101,10 @@ nav ul li a:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.92px;
-
 }
 
 .uiland-bnner-txt h1 span {
-  color: #0C5268;
+  color: #0c5268;
   font-family: poppins;
   font-size: 35px;
   font-style: normal;
@@ -128,7 +125,7 @@ nav ul li a:hover {
 
 .abt-bnner-txt .cont {
   border-radius: 5px;
-  background: linear-gradient(180deg, #0C5268 0.23%, #0C5268.06%);
+  background: linear-gradient(180deg, #0c5268 0.23%, #0C5268.06%);
   color: #ffffff;
   text-align: center;
   font-size: 1rem;
@@ -142,7 +139,7 @@ nav ul li a:hover {
   margin: 100px 0;
 }
 
-.abt-bnner-img>img {
+.abt-bnner-img > img {
   width: 1200px;
   height: fit-content;
 }
@@ -166,7 +163,6 @@ nav ul li a:hover {
   font-style: normal;
 }
 
-
 .container__box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -183,7 +179,7 @@ nav ul li a:hover {
 }
 
 .container .container__box .box h3 {
-  color: #0C5268;
+  color: #0c5268;
   font-size: 20px;
   font-weight: 600;
   padding: 15px 0;
@@ -206,54 +202,95 @@ nav ul li a:hover {
 
 /*what makes us best*/
 .secondSection {
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
   font-family: poppins;
 }
-.y4{
-  background: rgb(159,232,255);
-background: linear-gradient(0deg, rgba(159,232,255,1) 0%, rgba(12,87,111,1) 100%);
+.y4 {
+  background: rgb(159, 232, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(159, 232, 255, 1) 0%,
+    rgba(12, 87, 111, 1) 100%
+  );
 }
-.choose-us h3{
-  color: #0C5268;
+.choose-us h3 {
+  color: #0c5268;
   font-size: 20px;
   font-weight: 600;
   padding: 15px 0;
 }
-.choose-us p{
+.choose-us p {
   font-size: 1rem;
-font-weight: 100;
-color: #3f4040;
-text-align: left-align;
-padding: 0 5px;
-font-family: poppins;
+  font-weight: 100;
+  color: #3f4040;
+  text-align: left-align;
+  padding: 0 5px;
+  font-family: poppins;
 }
-@media (max-width: 930px) and (max-width: 1200px) {
-   .col1{
+@media (max-width: 930px) {
+  .choose-us {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .choose-us .col1 {
+    width: 100%;
+  }
+  .x1 .choose {
+    color: #3f4040;
+    font-family: poppins;
+    font-size: 1rem;
+    font-style: normal;
+  }
+  .choose-us h3 {
+    color: #0c5268;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+  .choose-us p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #3f4040;
+    text-align: justify;
+    width: auto !important;
+    margin-right: 25px;
+  }
+  .column-2-us {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1200px) {
+  .col1 {
     width: 80% !important;
   }
-  .col2{
+
+  .col2 {
     width: auto;
   }
-  .p-3{
+
+  .p-3 {
     all: unset;
   }
-  .p-3 img{
+
+  .p-3 img {
     all: unset;
     width: 350px;
   }
 }
+
 @media (max-width: 930px) {
-  
-.row1 .y4{
-  width: 250px;
-}
+  .row1 .y4 {
+    width: 250px;
+  }
 }
 .thirdSection {
   display: grid;
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
   padding: 30px;
   padding-top: 80px;
   font-family: poppins;
@@ -278,8 +315,6 @@ div.gallery img {
   margin-right: auto;
   margin-top: 50px;
 }
-
-
 
 .responsive {
   padding: 0;
@@ -319,7 +354,6 @@ div.gallery img {
   padding: 15px 0;
 }
 
-  
 .flex .btn {
   border-radius: 8px;
   color: #ffffff;
@@ -331,8 +365,8 @@ div.gallery img {
   height: 80px;
   width: 200px;
 }
-.flex .btn p{
-  color: #0C5268;
+.flex .btn p {
+  color: #0c5268;
   font-size: 1.2rem;
   font-family: poppins;
   font-weight: 600;
@@ -349,43 +383,40 @@ div.gallery img {
   justify-content: space-around;
   margin: 90px 0;
   background-color: white;
-  }
-  
- 
-  
-  .container6 {
+}
+
+.container6 {
   margin: auto;
   max-width: 48%;
   background-color: white;
   border: 1px solid #c9c7c7;
+}
+@media (max-width: 900px) {
+  .sixthSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
-  @media (max-width: 900px) {
-    .sixthSection{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .container5{
-      max-width: 100% !important;
-      margin: 0 auto;
-    }
-     .container6{
-      max-width: 100% !important;
-      margin: 30px auto;
-    }
-    
+  .container5 {
+    max-width: 100% !important;
+    margin: 0 auto;
   }
-  .accordion1 .accordion-item-1 {
+  .container6 {
+    max-width: 100% !important;
+    margin: 30px auto;
+  }
+}
+.accordion1 .accordion-item-1 {
   border-bottom: 1px solid #ffffff;
-  }
-  .accordion-item-1  h3{
-    padding-right: 22px;
-  }
-  .accordion1 .accordion-item-1 button[aria-expanded=true] {
+}
+.accordion-item-1 h3 {
+  padding-right: 22px;
+}
+.accordion1 .accordion-item-1 button[aria-expanded="true"] {
   border-bottom: 1px solid #c9c7c7;
-  }
-  
-  .accordion1 button {
+}
+
+.accordion1 button {
   position: relative;
   display: block;
   text-align: left;
@@ -396,24 +427,23 @@ div.gallery img {
   font-size: 20px;
   border-top: 1px solid #c9c7c7;
   background: none;
-  outline:#000000;
-  }
-  
-  .accordion1 button:hover,
-  .accordion1 button:focus {
-    cursor: pointer;
-    color: #545151;
-  }
-  
-  .accordion1 button:hover::after,
-  .accordion1 button:focus::after {
-    cursor: pointer;
-    color: #757d7e;
-    border: 1px solid #c9c7c7;
-  }
-  
-  
-  .accordion1 button .icon {
+  outline: #000000;
+}
+
+.accordion1 button:hover,
+.accordion1 button:focus {
+  cursor: pointer;
+  color: #545151;
+}
+
+.accordion1 button:hover::after,
+.accordion1 button:focus::after {
+  cursor: pointer;
+  color: #757d7e;
+  border: 1px solid #c9c7c7;
+}
+
+.accordion1 button .icon {
   display: inline-block;
   position: absolute;
   top: 18px;
@@ -422,9 +452,9 @@ div.gallery img {
   height: 22px;
   border: 1px solid;
   border-radius: 22px;
-  }
-  
-  .accordion1 button .icon::before {
+}
+
+.accordion1 button .icon::before {
   display: block;
   position: absolute;
   content: "";
@@ -433,9 +463,9 @@ div.gallery img {
   width: 10px;
   height: 2px;
   background: currentColor;
-  }
-  
-  .accordion1 button .icon::after {
+}
+
+.accordion1 button .icon::after {
   display: block;
   position: absolute;
   content: "";
@@ -444,25 +474,25 @@ div.gallery img {
   width: 2px;
   height: 10px;
   background: currentColor;
-  }
-  
-  .accordion1 button[aria-expanded=true] {
+}
+
+.accordion1 button[aria-expanded="true"] {
   color: #000000;
-  }
-  
-  .accordion1 button[aria-expanded=true] .icon::after {
+}
+
+.accordion1 button[aria-expanded="true"] .icon::after {
   width: 0;
-  }
-  
-  .accordion1 button[aria-expanded=true]+.accordion-content {
+}
+
+.accordion1 button[aria-expanded="true"] + .accordion-content {
   opacity: 1;
   max-height: 100%;
   transition: all 200ms linear;
   will-change: opacity, max-height;
-  }
-  
-  .accordion1 .accordion-content {
-    color:#3f4040 ;
+}
+
+.accordion1 .accordion-content {
+  color: #3f4040;
   opacity: 0;
   max-height: 0;
   line-height: 1.5;
@@ -473,62 +503,61 @@ div.gallery img {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
   margin: 0 10px;
-  } 
-  
-  .accordion1 .accordion-content p {
+}
+
+.accordion1 .accordion-content p {
   font-size: 1rem;
   font-weight: 50;
   margin: 2em 0;
-  }
-  
-  .container5 {
-    margin: auto;
-    max-width: 48%;
-    background-color: white;
-    border: 1px solid #c9c7c7;
-  }
-  
-  .accordion .accordion-item {
+}
+
+.container5 {
+  margin: auto;
+  max-width: 48%;
+  background-color: white;
+  border: 1px solid #c9c7c7;
+}
+
+.accordion .accordion-item {
   border-bottom: 1px solid #ffffff;
-  }
-  
-  .accordion-item  h3{
-    padding-right: 22px;
-  }
-  .accordion .accordion-item button[aria-expanded=true] {
+}
+
+.accordion-item h3 {
+  padding-right: 22px;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
   border-bottom: 1px solid #c9c7c7;
-  }
-  
-  .accordion button {
-    position: relative;
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 0.8em 10px;
-    color: #000;
-    font-weight: 600;
-    font-size: 20px;
-    border-top: 1px solid #c9c7c7;
-    background: none;
-    outline:#000000;
-  }
-  
-  .accordion button:hover,
-  .accordion button:focus {
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 0.8em 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  border-top: 1px solid #c9c7c7;
+  background: none;
+  outline: #000000;
+}
+
+.accordion button:hover,
+.accordion button:focus {
   cursor: pointer;
   color: #545151;
-  }
-  
-  .accordion button:hover::after,
-  .accordion button:focus::after {
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
   cursor: pointer;
   color: #757d7e;
   border: 1px solid #c9c7c7;
-  }
-  
-  
-  .accordion button .icon {
-    display: inline-block;
+}
+
+.accordion button .icon {
+  display: inline-block;
   position: absolute;
   top: 18px;
   right: 10px;
@@ -536,9 +565,9 @@ div.gallery img {
   height: 22px;
   border: 1px solid;
   border-radius: 22px;
-  }
-  
-  .accordion button .icon::before {
+}
+
+.accordion button .icon::before {
   display: block;
   position: absolute;
   content: "";
@@ -547,9 +576,9 @@ div.gallery img {
   width: 10px;
   height: 2px;
   background: currentColor;
-  }
-  
-  .accordion button .icon::after {
+}
+
+.accordion button .icon::after {
   display: block;
   position: absolute;
   content: "";
@@ -558,25 +587,25 @@ div.gallery img {
   width: 2px;
   height: 10px;
   background: currentColor;
-  }
-  
-  .accordion button[aria-expanded=true] {
-    color: #000000;
-  }
-  
-  .accordion button[aria-expanded=true] .icon::after {
+}
+
+.accordion button[aria-expanded="true"] {
+  color: #000000;
+}
+
+.accordion button[aria-expanded="true"] .icon::after {
   width: 0;
-  }
-  
-  .accordion button[aria-expanded=true]+.accordion-content {
+}
+
+.accordion button[aria-expanded="true"] + .accordion-content {
   opacity: 1;
   max-height: 100%;
   transition: all 200ms linear;
   will-change: opacity, max-height;
-  }
-  
-  .accordion .accordion-content {
-    color:#3f4040 ;
+}
+
+.accordion .accordion-content {
+  color: #3f4040;
   opacity: 0;
   max-height: 0;
   line-height: 1.5;
@@ -587,15 +616,13 @@ div.gallery img {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
   margin: 0 10px;
-  }
-  
-  .accordion .accordion-content p {
-    font-size: 1rem;
-    font-weight: 50;
-    margin: 2em 0;
-  }
+}
 
-
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 50;
+  margin: 2em 0;
+}
 
 /* Contact Us CSS */
 .ContactSection {
@@ -613,7 +640,7 @@ div.gallery img {
   margin: 100px 0;
 }
 
-.leftSection1>img {
+.leftSection1 > img {
   width: 550px;
   height: fit-content;
 }
@@ -627,11 +654,10 @@ div.gallery img {
     flex-wrap: wrap;
   }
 
-  .leftSection1>img {
+  .leftSection1 > img {
     width: 100% !important;
   }
 }
-
 
 @media (max-width: 768px) {
   .rightSection1 p {
@@ -640,8 +666,8 @@ div.gallery img {
 
   .row3 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 6px;
     margin: 20px;
     width: 100%;
@@ -650,8 +676,8 @@ div.gallery img {
 
   .row4 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 6px;
     margin: 20px;
     width: 100%;
@@ -660,13 +686,12 @@ div.gallery img {
 
   .row5 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 6px;
     margin: 20px;
     width: 100%;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -676,8 +701,8 @@ div.gallery img {
 
   .row3 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
     width: 400px;
@@ -685,8 +710,8 @@ div.gallery img {
 
   .row4 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
     width: 400px;
@@ -694,13 +719,12 @@ div.gallery img {
 
   .row5 {
     border-radius: 9.005px;
-    background: #F5F8FF;
-    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.10);
+    background: #f5f8ff;
+    box-shadow: 0px 3.60185px 13.50694px 0px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
     width: 400px;
   }
-
 }
 
 .relative ul li a {
@@ -734,7 +758,6 @@ div.gallery img {
   font-size: 1.2rem;
 }
 
-
 /* Blog CSS */
 
 /* Hide the Blog on small screens */
@@ -760,16 +783,15 @@ div.gallery img {
 }
 
 @media (max-width: 900px) {
-  .f1  {
+  .f1 {
     text-align: center;
   }
   .b2 {
-     display : none;
+    display: none;
   }
 }
 
 /* Fixed Whatsapp */
-
 
 .fixed-contact {
   position: fixed;
@@ -787,8 +809,6 @@ div.gallery img {
   width: 50px;
   height: 50px;
 }
-
-
 
 /*  Contact Form
 .fixed-Contact img {
